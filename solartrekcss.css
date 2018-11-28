@@ -1,9 +1,9 @@
-<<<<<<< HEAD
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: yellow;
+  background-color: #FFE4C4;
   padding: 20px 20px;
+
 }
 
 /* Style the header links */
@@ -38,7 +38,7 @@
 
 /* Float the link section to the right */
 .header-right {
-  float: right;
+  float: center ;
 }
 .header a.affi:hover{
   background-color: dodgerblue;
@@ -54,61 +54,89 @@
   .header-right {
     float: none;
   }
-=======
-/* Style the header with a grey background and some padding */
-.header {
-  overflow: hidden;
-  background-color: yellow;
-  padding: 20px 20px;
+}
+#mySearch {
+  width: 20%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
 }
 
-/* Style the header links */
-.header a {
-  float: left;
-  color: brown;
-    text-align: center;
+/* Style the navigation menu */
+#myMenu {
+  list-style-type: none;
+  padding: 40px;
+  margin: 0;
+  width: 70%;
+
+}
+
+/* Style the navigation links */
+#myMenu li a {
+  background-color: #FFE4B5;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
+  text-shadow: all;
+  font-size: 30px;
+  color: brown;
+  display:block;  font-stretch: expanded;
+  font-style: crimson text;
+  text-align: center;
+
 }
 
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+#myMenu li a:hover {
+  background-color: #eee;
+}
+.row{
+  display: flex;
+  background-color:   #DCDCDC;
+
+}
+.column{
+  flex:70%;
+}
+#f1{
+  padding: 50px;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
 }
 
-/* Change the background color on mouse-over */
-.header a:hover {
-  background-color: orange;
-  color: black;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+    display: inline-block;
 }
 
-/* Style the active/current link*/
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-/* Float the link section to the right */
-.header-right {
-  float: right;
-}
-.header a.affi:hover{
-  background-color: dodgerblue;
-   color: white;
-}
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: brown;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
->>>>>>> 98ed6862b7f21816575122b0b362ad1c2bdcddc1
 }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: white;background position: relative;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;color:white;font-style: oblique;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color:   #800000;}
